@@ -32,6 +32,9 @@ df2018 = new_df.head(1000)
 df2008 = new_df2.head(1000)
 print(df2)
 
+# Convert to csv file
+df2018.to_csv('/Users/thaoduyentran/Downloads/df2018.csv', index=None)
+df2008.to_csv('/Users/thaoduyentran/Downloads/df2008.csv',index=None)
 
 # Check null values
 df2018.isnull().values.any()
